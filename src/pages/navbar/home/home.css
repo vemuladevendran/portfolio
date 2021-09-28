@@ -1,0 +1,66 @@
+@font-face {
+    font-family: Bogart;
+    src: url(/home/devendran/dev/React-dev/portfolio/src/Bogart-Black-Italic-trial.ttf);
+}
+
+.my-text {
+    font-family: Bogart, Recoleta, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #fff;
+    background: linear-gradient(271deg, #a0e9ff 30%, #a162e8 50%, #f093b0 70%, #edca85 94%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.eye-wrapper {
+    max-width: 555px !important;
+    height: 555px !important;
+    background: #191919;
+}
+
+.side-box {
+    position: absolute;
+    width: 135px;
+    height: 135px;
+    border-radius: 20px;
+}
+
+.side-box-1 {
+    background: linear-gradient(180deg, #edca85, #f093b0);
+    left: -135px;
+    top: -60px;
+}
+
+.side-box-2 {
+    background: linear-gradient(180deg, #b097f2, #a0e9ff);
+    right: -135px;
+    top: -60px;
+}
+
+.side-box-3 {
+    background: linear-gradient(5.85deg, #dacdff -39.75%, rgba(218, 205, 255, 0) 61.37%), #ffeaee;
+    left: -135px;
+    bottom: -60px;
+}
+
+.side-box-4 {
+    background: linear-gradient(180.1deg, #142c69 -59.06%, rgba(20, 44, 105, 0) 65.9%), #008081;
+    right: -135px;
+    bottom: -60px;
+}
+
+.eye-ball-wrapper {
+    width: 250px;
+    height: 150px;
+    background: white;
+    -moz-border-radius: 100px / 50px;
+    -webkit-border-radius: 100px / 178px;
+    border-radius: 507px / 313px;
+    z-index: 10;
+}
+
+@media only screen and (min-width: 1000px) {
+    .eye-wrapper {
+        min-width: 555px !important;
+    }
+}
