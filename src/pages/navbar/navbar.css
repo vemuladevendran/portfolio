@@ -1,0 +1,7 @@
+.nav-item:hover {
+    border-bottom: 3px solid #ffc4ff;
+}
+
+.nav-social-icons {
+    padding: 0 1.3rem;
+}
