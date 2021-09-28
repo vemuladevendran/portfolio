@@ -14,7 +14,7 @@
 
 .eye-wrapper {
     max-width: 555px !important;
-    height: 555px !important;
+    padding: 10rem 0 ;
     background: #191919;
 }
 
@@ -49,18 +49,23 @@
     bottom: -60px;
 }
 
-.eye-ball-wrapper {
-    width: 250px;
-    height: 150px;
-    background: white;
-    -moz-border-radius: 100px / 50px;
-    -webkit-border-radius: 100px / 178px;
-    border-radius: 507px / 313px;
-    z-index: 10;
+.eye-ball {
+    transform: translateX(0px) translateY(-32.5123px);
+    animation: eyespin 5s infinite;
 }
 
-@media only screen and (min-width: 1000px) {
-    .eye-wrapper {
-        min-width: 555px !important;
+@keyframes eyespin {
+    0% {
+        transform: translateX(0px) translateY(0px);
+    }
+    25% {
+        transform: translateX(-20px) translateY(3.5123px);
+    }
+    50% {
+        transform: translateX(0px) translateY(3.5123px);
+    }
+    75% {
+        transform: translateX(0px) translateY(-30.5123px);
+
     }
 }
