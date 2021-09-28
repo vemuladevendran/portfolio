@@ -9,7 +9,7 @@ function Home() {
           <p className="my-text fs-1 text-center w-100">A Developer.</p>
           <p className="text-white px-3 text-center w-100">
             I’m also a full-stack- developer and general doodler with a keen eye
-            for creating engaging UI, bringing products to life.
+            for creating engaging Web Sites, bringing products to life.
           </p>
         </div>
         <div className="col-12 col-lg-6 d-none d-md-flex bg-dark">
