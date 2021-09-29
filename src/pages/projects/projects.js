@@ -44,30 +44,26 @@ function Projects(params) {
           style={{ backgroundColor: "#191919" }}
         >
           <div className="row justify-content-lg-between p-4">
-            <p className="text-muted text-center text-md-start">
-              MINI STUCOR
-            </p>
-            <div className="col-12 col-md-6 col-lg-6">
-              <p className="text-muted text-center fs-5">A SHORT DESCRIPTION</p>
-              <div className="d-flex align-items-center h-100">
-                <p className="text-white project-details">
-                  This is built in react js and the Node js for database I used
-                  MongoDB. This project is made for stafs in college to maintain
-                  the students details. Once we enter the details in this we can
-                  ascess the data from anywhere through internet. Using this
-                  application we can send the circulars we can send the reports
-                  for the particular student. and we have more filters to filter
-                  the details. This will reduce the time on stafe in college to
-                  filter
-                </p>
-              </div>
-            </div>
-            <div className="col-12 col-md-6 col-lg-4">
+            <p className="text-muted text-center text-md-start">MINI STUCOR</p>
+
+            <div className="col-12 col-md-6 col-lg-4 order-md-2">
               <img
                 src="/assets/mini-stucor.png"
                 alt="Project Screen Short"
                 className="project-img"
               />
+            </div>
+            <div className="col-12 col-md-6 col-lg-6">
+              <p className="text-muted text-center fs-5">A SHORT DESCRIPTION</p>
+              <div className="d-flex align-items-center h-100">
+                <p className="text-white project-details">
+                  This Project is built in Angular, ionic and for back-end Node
+                  Js. This application will show the circulars, reports and
+                  marks that send by college. This app will be useful to
+                  students to known the details fast and easy. This app is
+                  similar to the STUCOR which is using by Anna university.
+                </p>
+              </div>
             </div>
           </div>
         </div>

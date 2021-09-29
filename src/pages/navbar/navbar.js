@@ -2,7 +2,7 @@ import "./navbar.css";
 
 function NavBar() {
   return (
-    <div className="container-fluid position-fixed w-100 top-0 p-0">
+    <div className="container-fluid position-fixed w-100 top-0 p-0" style={{zIndex: '5'}}>
       <nav className="row bg-dark px-4 py-3 m-0">
         {/* nav links */}
         <div className="col-12 col-md-6 d-flex justify-content-around">
