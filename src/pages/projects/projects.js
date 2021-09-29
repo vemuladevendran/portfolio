@@ -3,7 +3,8 @@ import "./project.css";
 function Projects(params) {
   return (
     <>
-      <div className="bg-dark py-5" style={{ padding: "0 5%" }}>
+      {/* project - 1 */}
+      <div className="bg-dark py-5 project" style={{ padding: "0 5%" }}>
         <div
           className="container-fluid rounded"
           style={{ backgroundColor: "#191919" }}
@@ -16,6 +17,8 @@ function Projects(params) {
               <img
                 src="/assets/student-db.png"
                 alt="Project Screen Short"
+                decoding="async"
+                loading="lazy"
                 className="project-img"
               />
             </div>
@@ -50,6 +53,8 @@ function Projects(params) {
               <img
                 src="/assets/mini-stucor.png"
                 alt="Project Screen Short"
+                decoding="async"
+                loading="lazy"
                 className="project-img"
               />
             </div>
@@ -62,6 +67,42 @@ function Projects(params) {
                   marks that send by college. This app will be useful to
                   students to known the details fast and easy. This app is
                   similar to the STUCOR which is using by Anna university.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* project -2  */}
+      <div className="bg-dark py-5" style={{ padding: "0 5%" }}>
+        <div
+          className="container-fluid rounded"
+          style={{ backgroundColor: "#191919" }}
+        >
+          <div className="row justify-content-lg-between p-4">
+            <p className="text-muted text-center text-md-end">BangaloreWaits</p>
+
+            <div className="col-12 col-md-6 col-lg-4">
+              <img
+                src="/assets/BangaloreWaits.png"
+                alt="Project Screen Short"
+                decoding="async"
+                loading="lazy"
+                className="project-img"
+              />
+            </div>
+            <div className="col-12 col-md-6 col-lg-6">
+              <p className="text-muted text-center fs-5">A SHORT DESCRIPTION</p>
+              <div className="d-flex align-items-center h-100">
+                <p className="text-white project-details">
+                  This Project is built in Angular and for back-end Node Js.
+                  This application developed to the patients who affected by
+                  corona. This will help the patients to known the availability
+                  of beds, Ambulance, General Bed, ICU, ICU with Ventilator,
+                  HDU, NIV, Oxygen Cylinders,Oxygen Refill, Oxygen Concentrator,
+                  Oxygen Cylinder Regulators, Blood Plasma, Ration Kits, Covid
+                  Medical Kits, Cooked Food.
                 </p>
               </div>
             </div>

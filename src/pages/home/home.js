@@ -12,7 +12,7 @@ function Home() {
             for creating engaging Web Sites, bringing products to life.
           </p>
         </div>
-        <div className="col-12 col-lg-6 d-none d-md-flex bg-dark">
+        <div className="col-12 col-lg-6 d-flex bg-dark">
           {/* eye box */}
           <div className="eye-wrapper w-100 d-flex justify-content-center align-items-center m-auto position-relative">
             {/* side boxes */}
