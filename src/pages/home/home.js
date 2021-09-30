@@ -2,7 +2,7 @@ import "./home.css";
 
 function Home() {
   return (
-    <div className="container-fluid bg-dark h-100 mt-5">
+    <div className="container-fluid bg-dark h-100 mt-5" id="home">
       <div className="row h-100">
         <div className="col-12 col-lg-6 d-flex flex-column justify-content-center">
           <p className="my-text fs-1 text-center w-100">Hi. I'm Devendran.</p>

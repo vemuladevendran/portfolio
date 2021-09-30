@@ -5,3 +5,11 @@
 .nav-social-icons {
     padding: 0 1.3rem;
 }
+
+.project-list {
+    display: none;
+}
+
+.project-nav:hover .project-list {
+    display: flex;
+}

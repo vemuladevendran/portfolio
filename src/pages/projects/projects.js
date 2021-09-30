@@ -4,7 +4,7 @@ function Projects(params) {
   return (
     <>
       {/* project - 1 */}
-      <div className="bg-dark py-5 project" style={{ padding: "0 5%" }}>
+      <div className="bg-dark py-5 project" id="studentdb" style={{ padding: "0 5%" }}>
         <div
           className="container-fluid rounded"
           style={{ backgroundColor: "#191919" }}
@@ -41,7 +41,7 @@ function Projects(params) {
         </div>
       </div>
       {/* project -2  */}
-      <div className="bg-dark py-5" style={{ padding: "0 5%" }}>
+      <div className="bg-dark py-5" id="ministucor" style={{ padding: "0 5%" }}>
         <div
           className="container-fluid rounded"
           style={{ backgroundColor: "#191919" }}
@@ -75,7 +75,7 @@ function Projects(params) {
       </div>
 
       {/* project -2  */}
-      <div className="bg-dark py-5" style={{ padding: "0 5%" }}>
+      <div className="bg-dark py-5" id="bangalorewaits" style={{ padding: "0 5%" }}>
         <div
           className="container-fluid rounded"
           style={{ backgroundColor: "#191919" }}
