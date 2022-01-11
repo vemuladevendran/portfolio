@@ -22,6 +22,9 @@ function MySkils(params) {
             <img src="/assets/js.svg" alt="html"></img>
           </div>
           <div className="skills-img-wrapper">
+            <img src="/assets/bootstrap.png" alt="html"></img>
+          </div>
+          <div className="skills-img-wrapper">
             <img src="/assets/angular.svg" alt="html"></img>
           </div>
         </div>
