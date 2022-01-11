@@ -1,0 +1,16 @@
+.skills-img-wrapper > img {
+    width: 200px;
+    height: 58px;
+}
+.skills-img-wrapper {
+    margin: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+    .skills {
+        margin-top: 10rem;
+    }
+    .skills-img-wrapper > img {
+        width: 100px !important;
+    }
+}
