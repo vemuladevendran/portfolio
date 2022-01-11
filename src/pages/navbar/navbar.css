@@ -12,4 +12,5 @@
 
 .project-nav:hover .project-list {
     display: flex;
+    z-index: 10;
 }
