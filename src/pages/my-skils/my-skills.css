@@ -7,9 +7,9 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .skills {
+    /* .skills {
         margin-top: 10rem;
-    }
+    } */
     .skills-img-wrapper > img {
         width: 100px !important;
     }
