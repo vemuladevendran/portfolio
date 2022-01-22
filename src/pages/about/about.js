@@ -1,24 +1,19 @@
 import "./about.css";
-import "./cloud.js";
 const TagCloud = require("TagCloud");
-
+<script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js">
+  {""}
+</script>;
 function About() {
   const myTags = [
     "JavaScript",
     "CSS",
     "HTML",
-    "C",
-    "C++",
-    "React",
-    "Python",
-    "Java",
+    "React JS",
+    "Angular",
     "git",
-    "django",
     "Node.js",
-    "OpenCV",
-    "GCP",
-    "MySQL",
-    "jQuery",
+    "Mongo Db",
+    "Bootstrap",
   ];
 
   TagCloud(".content", myTags, {
@@ -27,8 +22,8 @@ function About() {
 
     // animation speed
     // slow, normal, fast
-    maxSpeed: "fast",
-    initSpeed: "fast",
+    maxSpeed: "normal",
+    initSpeed: "normal",
 
     // 0 = top
     // 90 = left
@@ -41,9 +36,6 @@ function About() {
 
   return (
     <div className="about-container container-fluid px-0 py-3">
-      <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js">
-        {" "}
-      </script>
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6">

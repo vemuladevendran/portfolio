@@ -24,6 +24,16 @@
     margin: auto;
     width: 50%;
 }
+
+.tagcloud--item {
+    color: #08fdd8;
+    font-family: Bogart, Recoleta, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
 .tagcloud--item:hover {
-    color: #36454f;
+    color: red;
+}
+
+.tagcloud:nth-child(1) {
+    display: none;
 }

@@ -1,12 +1,39 @@
 import "./home.css";
 
 function Home() {
+  const spans = document.querySelectorAll(".word span");
+
+  spans.forEach((span, idx) => {
+    span.addEventListener("click", (e) => {
+      e.target.classList.add("active");
+    });
+    span.addEventListener("animationend", (e) => {
+      e.target.classList.remove("active");
+    });
+
+    // Initial animation
+    setTimeout(() => {
+      span.classList.add("active");
+    }, 750 * (idx + 1));
+  });
+
   return (
     <div className="container-fluid bg-dark h-100 mt-5" id="home">
       <div className="row h-100">
         <div className="col-12 col-lg-6 d-flex flex-column justify-content-center">
-          <p className="my-text fs-1 text-center w-100">Hi. I'm Devendran.</p>
-          <p className="my-text fs-1 text-center w-100">A Developer.</p>
+          <div className="word my-text fs-1 text-center w-100 d-flex justify-content-center">
+            <p className="my-text fs-1 text-center me-2">Hi. I'm</p>
+            <span>D</span>
+            <span>e</span>
+            <span>v</span>
+            <span>e</span>
+            <span>n</span>
+            <span>d</span>
+            <span>r</span>
+            <span>a</span>
+            <span>n</span>
+          </div>
+          <p className="my-text fs-1 text-center w-100 text-2">A Developer.</p>
           <p className="text-white px-3 text-center w-100">
             I’m also a full-stack- developer and general doodler with a keen eye
             for creating engaging Web Sites, bringing products to life.
