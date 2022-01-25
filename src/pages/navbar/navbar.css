@@ -1,3 +1,12 @@
+.logo-img {
+    width: 2rem;
+    height: 2rem;
+}
+
+nav {
+    background-color: #191919;
+}
+
 .nav-item:hover {
     border-bottom: 3px solid #ffc4ff;
 }
@@ -6,11 +15,38 @@
     padding: 0 1.3rem;
 }
 
-.project-list {
-    display: none;
+.mobile-nav-wrapper {
+    background-color: rgba(0, 0, 0, 0.637);
 }
 
-.project-nav:hover .project-list {
-    display: flex;
-    z-index: 10;
+.mobile-nav {
+    background: #191919;
+    height: 100vh;
+    padding: 1.5rem 2rem;
+}
+
+.nav-items {
+    color: white;
+}
+
+.show-menu {
+    height: 100%;
+    width: 100%;
+}
+
+.show-menu > div {
+    width: 75%;
+    transition: all 0.5s;
+}
+
+.hide-menu {
+    height: 0;
+    width: 0;
+}
+
+.hide-menu > div {
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: all 0.5s;
 }

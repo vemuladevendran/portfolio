@@ -39,7 +39,10 @@ function About() {
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6">
-            <h1 className="about-title">My, Myself & I </h1>
+            <div className="content">
+              <h1 className="about-title">My, Myself & I </h1>
+              <h1 className="about-title">My, Myself & I </h1>
+            </div>
             <p className="about-content mt-5">
               I’m a Front-End Developer located in Chennai. I have a serious
               passion for UI effects and creating intuitive, dynamic user

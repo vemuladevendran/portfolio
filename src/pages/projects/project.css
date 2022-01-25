@@ -1,10 +1,41 @@
-.project-img {
-    width: 100%;
-    height: 640px;
-}
-
-.project-details {
+.project-text {
+    color: white;
     font-family: Bogart, Recoleta, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
+.card-shadow {
+    box-shadow: 0 0.5rem 0.3rem white !important;
+}
 
+.details-btn {
+    bottom: 0;
+    right: 0;
+    background-color: transparent;
+}
+
+.project-img{
+    height: 210px;
+}
+
+.ani-text {
+    color: white;
+    font-weight: bold;
+    font-family: monospace;
+    cursor: pointer;
+}
+.ani-text span {
+    transition: 0.5s linear;
+}
+.ani-text:hover span:nth-child(1) {
+    margin-right: 5px;
+}
+.ani-text:hover span:nth-child(1):after {
+    content: "'";
+}
+.ani-text:hover span:nth-child(2) {
+    margin-left: 30px;
+}
+.ani-text:hover span {
+    color: white;
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white;
+}

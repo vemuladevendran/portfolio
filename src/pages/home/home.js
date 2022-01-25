@@ -1,37 +1,53 @@
+import { useEffect, useState } from "react";
 import "./home.css";
 
+const MyName = () => {
+  const myName = [..."Devendran"];
+  const [activeLetter, setActiveLetter] = useState();
+  useEffect(() => {
+    let count = 0;
+    const clrTimer = () => window.clearInterval(timerId);
+
+    const timerId = window.setInterval(() => {
+      setActiveLetter(count);
+      ++count;
+      if (count === myName.length) {
+        clrTimer();
+      }
+    }, 800);
+
+    return clrTimer;
+  }, [myName.length]);
+
+  const handleLetterClick = function (i) {
+    setActiveLetter(i);
+  };
+  
+  return (
+    <>
+      {myName.map((x, i) => {
+        return (
+          <span
+            className={activeLetter === i ? "active" : ""}
+            onClick={handleLetterClick.bind(null, i)}
+            key={i.toString()}
+          >
+            {x}
+          </span>
+        );
+      })}
+    </>
+  );
+};
+
 function Home() {
-  const spans = document.querySelectorAll(".word span");
-
-  spans.forEach((span, idx) => {
-    span.addEventListener("click", (e) => {
-      e.target.classList.add("active");
-    });
-    span.addEventListener("animationend", (e) => {
-      e.target.classList.remove("active");
-    });
-
-    // Initial animation
-    setTimeout(() => {
-      span.classList.add("active");
-    }, 750 * (idx + 1));
-  });
-
   return (
     <div className="container-fluid bg-dark h-100 mt-5" id="home">
       <div className="row h-100">
         <div className="col-12 col-lg-6 d-flex flex-column justify-content-center">
           <div className="word my-text fs-1 text-center w-100 d-flex justify-content-center">
             <p className="my-text fs-1 text-center me-2">Hi. I'm</p>
-            <span>D</span>
-            <span>e</span>
-            <span>v</span>
-            <span>e</span>
-            <span>n</span>
-            <span>d</span>
-            <span>r</span>
-            <span>a</span>
-            <span>n</span>
+            <MyName></MyName>
           </div>
           <p className="my-text fs-1 text-center w-100 text-2">A Developer.</p>
           <p className="text-white px-3 text-center w-100">
@@ -40,8 +56,12 @@ function Home() {
           </p>
         </div>
         <div className="col-12 col-lg-6 d-flex bg-dark">
+          {/* small screen */}
+          <div className="d-md-none">
+            <img src="/assets/eye.png" alt="eye" className="rounded" />
+          </div>
           {/* eye box */}
-          <div className="eye-wrapper w-100 d-flex justify-content-center align-items-center m-auto position-relative">
+          <div className="d-none eye-wrapper w-100 d-md-flex justify-content-center align-items-center m-auto position-relative">
             {/* side boxes */}
             <div className="side-box side-box-1 d-none d-xxl-block"></div>
             <div className="side-box side-box-2 d-none d-xxl-block"></div>
