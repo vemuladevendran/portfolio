@@ -109,12 +109,12 @@ svg {
     color: #fff;
 }
 
-.word span:nth-child(1).active {
-    animation: balance 1.5s ease-out;
+.word span:nth-child(2).active {
+    animation: balance 1s ease-out;
     transform-origin: bottom left;
 }
-.word span:nth-child(9).active {
-    animation: balance 1.5s ease-out;
+.word span:nth-child(10).active {
+    animation: balance2 1s ease-out;
     transform-origin: bottom left;
 }
 
@@ -130,11 +130,23 @@ svg {
     }
 }
 
-.word span:nth-child(2).active {
+@keyframes balance2 {
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    30%,
+    60% {
+        transform: rotate(45deg);
+    }
+}
+
+.word span:nth-child(3).active {
     animation: shrinkjump 1s ease-in-out;
     transform-origin: bottom center;
 }
-.word span:nth-child(8).active {
+.word span:nth-child(9).active {
     animation: shrinkjump 1s ease-in-out;
     transform-origin: bottom center;
 }
@@ -155,15 +167,11 @@ svg {
     }
 }
 
-.word span:nth-child(3).active {
+.word span:nth-child(4).active {
     animation: falling 2s ease-out;
     transform-origin: bottom center;
 }
-.word span:nth-child(7).active {
-    animation: falling 2s ease-out;
-    transform-origin: bottom center;
-}
-.word span:nth-child(10).active {
+.word span:nth-child(8).active {
     animation: falling 2s ease-out;
     transform-origin: bottom center;
 }
@@ -195,11 +203,11 @@ svg {
     }
 }
 
-.word span:nth-child(4).active {
+.word span:nth-child(5).active {
     animation: rotate 1s ease-out;
 }
 
-.word span:nth-child(6).active {
+.word span:nth-child(7).active {
     animation: rotate 1s ease-in-out;
 }
 
@@ -214,8 +222,8 @@ svg {
     }
 }
 
-.word span:nth-child(5).active {
-    animation: toplong 1.5s linear;
+.word span:nth-child(6).active {
+    animation: toplong 1s linear;
 }
 
 @keyframes toplong {
