@@ -1,16 +1,36 @@
 import "./project.css";
 import projectsDetails from "./project-list";
+import { useEffect, useState } from "react";
 
 function Projects() {
+  const [showMore, setShowMore] = useState(false);
+
+  const [projects, setProjects] = useState(projectsDetails);
+
+  useEffect(() => {
+    const data = projectsDetails.slice(0, 3);
+    if (!showMore) {
+      setProjects(data);
+      return;
+    }
+    setProjects(projectsDetails);
+  }, [showMore]);
+
+  // toggle show more
+
+  const toggleShowMore = () => {
+    setShowMore(!showMore);
+  };
+
   return (
     <div className="container-fluid py-5" style={{ background: "#212529" }}>
       <div className="container">
         <div className="row">
           <h1 className="project-text mb-3">Projects</h1>
 
-          {projectsDetails.map((x) => {
+          {projects.map((x, i) => {
             return (
-              <div className="col-12 col-md-4 p-3">
+              <div className="col-12 col-md-4 p-3" key={i.toString()}>
                 <div className="card-shadow">
                   <p className="project-text">{x.projectName}</p>
                   <div>
@@ -61,6 +81,18 @@ function Projects() {
               </div>
             );
           })}
+          {/* more btn */}
+          <div className="col-12 text-center mt-3">
+            <button
+              className="glow-on-hover"
+              type="button"
+              onClick={() => {
+                toggleShowMore();
+              }}
+            >
+              {showMore ? "Less" : "More"}
+            </button>
+          </div>
         </div>
       </div>
     </div>

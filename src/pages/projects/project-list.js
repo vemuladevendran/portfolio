@@ -54,6 +54,13 @@ const projectsDetails = [
     webUrl: "https://srikrishnadairy.in/sales/new",
     playstoreLink: "",
   },
+  {
+    projectName: "Shop Brand New",
+    projectImgUrl: "/assets/shop.png",
+    githubUrl: "",
+    webUrl: "https://www.shopbrandnew.com/",
+    playstoreLink: "",
+  },
 ];
 
 export default projectsDetails;
