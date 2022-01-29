@@ -250,3 +250,7 @@ svg {
     line-height: 0.75;
     margin: 10px 0;
 }
+
+#home {
+    margin-top: 4rem !important;
+}

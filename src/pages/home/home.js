@@ -42,7 +42,7 @@ const MyName = () => {
 
 function Home() {
   return (
-    <div className="container-fluid bg-dark h-100 mt-5" id="home">
+    <div className="container-fluid bg-dark h-100" id="home">
       <div className="row h-100">
         <div className="col-12 col-lg-6 d-flex flex-column justify-content-center">
           <div className="word my-text fs-1 text-center w-100 d-flex justify-content-center">
