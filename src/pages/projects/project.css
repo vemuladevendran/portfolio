@@ -33,7 +33,7 @@
     content: "'";
 }
 .ani-text:hover span:nth-child(2) {
-    margin-left: 30px;
+    margin-left: 10px;
 }
 .ani-text:hover span {
     color: white;
@@ -107,13 +107,13 @@
     }
 }
 
-span {
+/* span {
     transform: skewX(15deg);
-}
+} */
 
 span:nth-child(2) {
     width: 20px;
-    margin-left: 30px;
+    margin-left: 10px;
     position: relative;
     top: 12%;
 }

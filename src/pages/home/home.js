@@ -22,7 +22,7 @@ const MyName = () => {
   const handleLetterClick = function (i) {
     setActiveLetter(i);
   };
-  
+
   return (
     <>
       {myName.map((x, i) => {
@@ -55,7 +55,7 @@ function Home() {
             for creating engaging Web Sites, bringing products to life.
           </p>
         </div>
-        <div className="col-12 col-lg-6 d-flex bg-dark">
+        <div className="col-12 col-lg-6 d-flex justify-content-center bg-dark">
           {/* small screen */}
           <div className="d-md-none">
             <img src="/assets/eye.png" alt="eye" className="rounded" />

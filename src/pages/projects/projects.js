@@ -23,7 +23,11 @@ function Projects() {
   };
 
   return (
-    <div className="container-fluid py-5" style={{ background: "#212529" }}>
+    <div
+      className="container-fluid py-5"
+      id="projects"
+      style={{ background: "#212529" }}
+    >
       <div className="container">
         <div className="row">
           <h1 className="project-text mb-3">Projects</h1>

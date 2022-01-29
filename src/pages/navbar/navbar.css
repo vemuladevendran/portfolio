@@ -50,3 +50,9 @@ nav {
     overflow: hidden;
     transition: all 0.5s;
 }
+
+.mobile-nav a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 16px;
+}

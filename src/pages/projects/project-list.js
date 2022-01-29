@@ -8,7 +8,7 @@ const projectsDetails = [
   {
     projectName: "BangaloreWaits",
     projectImgUrl: "/assets/blr.png",
-    githubUrl: "",
+    githubUrl: "https://gitlab.com/blrwaits/blr-waits-user-ui",
     webUrl: "",
   },
   {

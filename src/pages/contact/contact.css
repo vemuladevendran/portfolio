@@ -1,0 +1,16 @@
+.contact-container {
+    background-color: #212529;
+}
+
+.contact-text {
+    color: white;
+}
+
+.form-input {
+    background-color: black;
+    color: white;
+}
+
+.form-input::placeholder {
+    color: white;
+}

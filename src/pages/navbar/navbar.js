@@ -16,13 +16,10 @@ function NavBar() {
       className="container-fluid position-fixed w-100 top-0 p-0 mb-5"
       style={{ zIndex: "5" }}
     >
-      <nav className="row ps-4 px-md-4 pt-3 m-0">
+      <nav className="row ps-4 px-md-4 py-3 m-0">
         {/* nav links */}
         <div className="col-6 d-flex justify-content-md-around align-items-center">
-          <a
-            href="#home"
-            className="text-decoration-none me-3"
-          >
+          <a href="#home" className="text-decoration-none me-3">
             <img src="/assets/logo.png" alt="logo" className="logo-img" />
           </a>
           <a
@@ -30,6 +27,12 @@ function NavBar() {
             className="nav-item text-white fw-bold text-decoration-none d-none d-md-block"
           >
             Home
+          </a>
+          <a
+            href="#about"
+            className="nav-item text-white fw-bold text-decoration-none d-none d-md-block"
+          >
+            About
           </a>
           <a
             href="#projects"
@@ -84,19 +87,71 @@ function NavBar() {
                 }}
               ></i>
             </p>
-            <p className="nav-items">Home</p>
-            <p className="nav-items">About</p>
-            <p className="nav-items">My Skills</p>
-            <p className="nav-items">Projects</p>
-            <p className="nav-items">Contact</p>
-            <p className="nav-items">
+            <a
+              className="nav-items"
+              href="#home"
+              onClick={() => {
+                toggleNavBar();
+              }}
+            >
+              Home
+            </a>
+            <a
+              className="nav-items"
+              href="#about"
+              onClick={() => {
+                toggleNavBar();
+              }}
+            >
+              About
+            </a>
+            <a
+              className="nav-items"
+              href="#skills"
+              onClick={() => {
+                toggleNavBar();
+              }}
+            >
+              My Skills
+            </a>
+            <a
+              className="nav-items"
+              href="#projects"
+              onClick={() => {
+                toggleNavBar();
+              }}
+            >
+              Projects
+            </a>
+            <a
+              className="nav-items"
+              href="#contact"
+              onClick={() => {
+                toggleNavBar();
+              }}
+            >
+              Contact
+            </a>
+            <a
+              className="nav-items"
+              href="#home"
+              onClick={() => {
+                toggleNavBar();
+              }}
+            >
               <i className="bi bi-linkedin text-white fw-bold"></i>
               <span className="ms-3">Linked In</span>
-            </p>
-            <p className="nav-items">
+            </a>
+            <a
+              className="nav-items"
+              href="#home"
+              onClick={() => {
+                toggleNavBar();
+              }}
+            >
               <i className="bi bi-facebook text-white fw-bold"></i>
               <span className="ms-3">Facebook</span>
-            </p>
+            </a>
           </div>
         </div>
       </section>

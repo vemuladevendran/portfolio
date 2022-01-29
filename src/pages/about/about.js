@@ -35,7 +35,7 @@ function About() {
   });
 
   return (
-    <div className="about-container container-fluid px-0 py-3">
+    <div className="about-container container-fluid px-0 py-3" id="about">
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6">
