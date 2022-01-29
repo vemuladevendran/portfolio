@@ -16,7 +16,7 @@ function About() {
     "Bootstrap",
   ];
 
-  TagCloud(".content", myTags, {
+  TagCloud(".content-2", myTags, {
     // radius in px
     radius: 250,
 
@@ -59,7 +59,16 @@ function About() {
             </p>
           </div>
           <div className="col-12 col-md-6">
-            <span className="content"></span>
+            <div className="d-md-none">
+              <span className="content-2"></span>
+            </div>
+            <div className="d-none d-md-block">
+              <img
+                src="/assets/eye2.png"
+                alt="eye"
+                className="w-75 about-eye-img"
+              />
+            </div>
           </div>
         </div>
       </div>

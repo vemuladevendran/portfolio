@@ -58,7 +58,7 @@ function Home() {
         <div className="col-12 col-lg-6 d-flex justify-content-center bg-dark">
           {/* small screen */}
           <div className="d-md-none">
-            <img src="/assets/eye.png" alt="eye" className="rounded" />
+            <img src="/assets/eye.png" alt="eye" className="rounded w-100" />
           </div>
           {/* eye box */}
           <div className="d-none eye-wrapper w-100 d-md-flex justify-content-center align-items-center m-auto position-relative">

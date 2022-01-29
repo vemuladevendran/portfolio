@@ -10,6 +10,10 @@
     font-size: 18px;
 }
 
+.about-eye-img {
+    height: 460px;
+}
+
 .content {
     position: relative;
 }
