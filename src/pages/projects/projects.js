@@ -48,7 +48,7 @@ function Projects() {
                         <p className="ani-text">
                           <span>M</span>
                           ore
-                          <span>Details</span>
+                          <span className="span">Details</span>
                         </p>
                       </button>
                       <div className="project-text">
