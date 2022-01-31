@@ -5,7 +5,7 @@ import Projects from "./pages/projects/projects";
 import MySkils from "./pages/my-skils/my-skils";
 import About from "./pages/about/about";
 import Contact from "./pages/contact/contact";
-
+import Footer from "./pages/footer/footer";
 function App() {
   return (
     <div className="App h-100">
@@ -15,6 +15,7 @@ function App() {
       <MySkils />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 }

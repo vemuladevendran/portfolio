@@ -2,7 +2,7 @@ import "./contact.css";
 import MyForm from "./my-form";
 function Contact() {
   return (
-    <div className="container-fluid contact-container" id="contact">
+    <div className="container-fluid contact-container pb-3" id="contact">
       <div className="row p-lg-5">
         <h1 className="project-text mb-3">Contact Us</h1>
         {/* location map */}
@@ -17,32 +17,60 @@ function Contact() {
           ></iframe>
         </div>
         <div className="col-12 col-md-6 d-lg-flex flex-wrap">
-          <div className="d-flex col-12 col-lg-3">
+          <div className="d-flex col-12 col-md-6">
             <i className="bi bi-geo-alt-fill text-white fs-2 fw-bold"></i>
-            <div className="ms-3">
+            <div className="ms-3 w-100">
               <p className="contact-text">Sri Rama Kuppam,</p>
               <p className="contact-text">Seethanjeri (Post),</p>
               <p className="contact-text">Uthukottai,</p>
               <p className="contact-text">Thiruvallur 602026</p>
+              <div className="d-flex">
+                <i className="bi bi-telephone-forward text-white fs-2 fw-bold"></i>
+                <div className="ms-3">
+                  <a href="tel:9445296380">9445296380</a>
+                </div>
+              </div>
+              <div className="col-12 d-flex">
+                <a
+                  href="mailto:devendranvemula@gmail.com"
+                  target="_blank"
+                  className="text-white fs-3 mx-3"
+                  rel="noreferrer"
+                >
+                  <i className="bi bi-envelope-fill h2"></i>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/devendran-vemula/"
+                  target="_blank"
+                  className="text-white fs-3 mx-3"
+                  rel="noreferrer"
+                >
+                  <i class="bi bi-linkedin text-white h2"></i>
+                </a>
+                <a
+                  href="https://github.com/vemuladevendran"
+                  target="_blank"
+                  className="text-white fs-3 mx-3"
+                  rel="noreferrer"
+                >
+                  <i class="bi bi-github text-white h2"></i>
+                </a>
+                <a
+                  href="https://api.whatsapp.com/send?phone=919445296380&text=*HI DEVENDRAN*"
+                  target="_blank"
+                  className="text-white fs-3 mx-3"
+                  rel="noreferrer"
+                >
+                  <i class="bi bi-whatsapp text-white h2"></i>
+                </a>
+              </div>
             </div>
           </div>
 
-          {/* email id */}
-          <div className="d-flex col-12 col-lg-6">
-            <i className="bi bi-envelope-fill text-white fs-2 fw-bold"></i>
-            <div className="ms-3">
-              <a href="mailto:devendranvemula@gmail.com">
-                devendranvemula@gmail.com
-              </a>
-            </div>
-          </div>
-
-          {/* mobile number */}
-          <div className="d-flex col-12 col-lg-3">
-            <i className="bi bi-telephone-forward text-white fs-2 fw-bold"></i>
-            <div className="ms-3">
-              <a href="tel:9445296380">9445296380</a>
-            </div>
+          <div className="col-6 d-none d-md-block text-center">
+            <p className="project-text h1">For Your FeedBack</p>
+            <p className="project-text h3">Fill The Form</p>
           </div>
 
           {/* query form request form */}
