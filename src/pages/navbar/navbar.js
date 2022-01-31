@@ -54,12 +54,22 @@ function NavBar() {
           </a>
         </div>
         <div className="col-12 col-md-6 d-none d-md-block text-end">
-          <span className="nav-social-icons">
+          <a
+            href="https://www.linkedin.com/in/devendran-vemula/"
+            target="_blank"
+            className="nav-social-icons"
+            rel="noreferrer"
+          >
             <i className="bi bi-linkedin text-white fw-bold"></i>
-          </span>
-          <span className="nav-social-icons">
+          </a>
+          <a
+            href="https://www.facebook.com/devendranvemula"
+            target="_blank"
+            className="nav-social-icons"
+            rel="noreferrer"
+          >
             <i className="bi bi-facebook text-white fw-bold"></i>
-          </span>
+          </a>
         </div>
         {/* mobile screen */}
         <div className="col-6 d-md-none text-end">
@@ -134,7 +144,9 @@ function NavBar() {
             </a>
             <a
               className="nav-items"
-              href="#home"
+              href="https://www.linkedin.com/in/devendran-vemula/"
+              target="_blank"
+              rel="noreferrer"
               onClick={() => {
                 toggleNavBar();
               }}
@@ -144,7 +156,9 @@ function NavBar() {
             </a>
             <a
               className="nav-items"
-              href="#home"
+              href="https://www.facebook.com/devendranvemula"
+              target="_blank"
+              rel="noreferrer"
               onClick={() => {
                 toggleNavBar();
               }}
