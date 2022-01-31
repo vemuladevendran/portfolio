@@ -11,7 +11,7 @@ function Contact() {
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4181.1804039230765!2d79.8940679!3d13.2950741!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a529ce13dd9223d%3A0xbd71d71f0c631635!2sSri%20Ramakuppam%20Rd%2C%20Katchur%2C%20Tamil%20Nadu%20602026!5e1!3m2!1sen!2sin!4v1643450088448!5m2!1sen!2sin"
             height="450"
-            allowfullscreen=""
+            allowFullScreen=""
             loading="lazy"
             className="p-3 p-md-2 w-100"
           ></iframe>
@@ -46,7 +46,7 @@ function Contact() {
                   className="text-white fs-3 mx-3"
                   rel="noreferrer"
                 >
-                  <i class="bi bi-linkedin text-white h2"></i>
+                  <i className="bi bi-linkedin text-white h2"></i>
                 </a>
                 <a
                   href="https://github.com/vemuladevendran"
@@ -54,7 +54,7 @@ function Contact() {
                   className="text-white fs-3 mx-3"
                   rel="noreferrer"
                 >
-                  <i class="bi bi-github text-white h2"></i>
+                  <i className="bi bi-github text-white h2"></i>
                 </a>
                 <a
                   href="https://api.whatsapp.com/send?phone=919445296380&text=*HI DEVENDRAN*"
@@ -62,7 +62,7 @@ function Contact() {
                   className="text-white fs-3 mx-3"
                   rel="noreferrer"
                 >
-                  <i class="bi bi-whatsapp text-white h2"></i>
+                  <i className="bi bi-whatsapp text-white h2"></i>
                 </a>
               </div>
             </div>
